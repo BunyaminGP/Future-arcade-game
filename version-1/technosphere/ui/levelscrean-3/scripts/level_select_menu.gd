@@ -15,7 +15,7 @@ extends Node2D
 func _ready() -> void:
 	button.grab_focus()
 	#LEVEL 1 CODE 
-	if LevelCore.lvl1_completed == true:
+	if LevelCore.lvl1_completed == true: 
 		lvl_1_locked.visible = false
 		lock_1.visible = false
 	if LevelCore.lvl1_completed == false:
@@ -69,5 +69,8 @@ func _on_button_3_pressed() -> void:
 	
 func _on_button_4_pressed() -> void:
 	if LevelCore.lvl3_completed:
-		get_tree().change_scene_to_file("res://level_4.tscn")
-	
+		get_tree().change_scene_to_file("res://level_4.tscn") 
+
+
+# Levelleri değiştirirken kullanılır
+
